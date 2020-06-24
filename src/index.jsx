@@ -8,7 +8,7 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
-import citiesReducer from './reducers/cities_reducer';
+import citiesReducer from './reducers/cities_reducer.js';
 
 
 // State and reducers
@@ -17,7 +17,7 @@ import citiesReducer from './reducers/cities_reducer';
 // });
 
 const reducers = combineReducers({
- cities: citiesReducer,
+ cities: citiesReducer
  //selectedFlat: selectedFlatReducer
 });
 

@@ -1,7 +1,7 @@
-const CitiesReducer = (state, action) => {
+export default function(state, action) {
   // compute and return the new state
   if (state === undefined) {
-    return []
+    return [];
   }
 
   // handle actions
@@ -11,13 +11,11 @@ const CitiesReducer = (state, action) => {
   //   default:
   //     return state;
   // }
-
   if (action.type === 'SET_CITIES') {
-    return action.playload;
+    return action.payload;
   } else {
     return state;
   }
-
 }
 
-export default CitiesReducer;
+//export default CitiesReducer;

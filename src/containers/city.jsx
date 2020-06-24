@@ -18,12 +18,14 @@ class City extends Component {
 
     return (
         //<div className={classes} onClick={this.handleClick}>
-          <div>
+          <div className="cities">
             <h1>{this.props.city.name}</h1>
           </div>
         //</div>
     );
   }
 }
+
+
 
 export default City;
