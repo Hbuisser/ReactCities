@@ -9,7 +9,7 @@ import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
 import citiesReducer from './reducers/cities_reducer.js';
-
+import selectedCityReducer from './reducers/selected_city_reducer.js';
 
 // State and reducers
 // const reducers = combineReducers({
@@ -17,8 +17,8 @@ import citiesReducer from './reducers/cities_reducer.js';
 // });
 
 const reducers = combineReducers({
- cities: citiesReducer
- //selectedFlat: selectedFlatReducer
+ cities: citiesReducer,
+ selectedCity: selectedCityReducer
 });
 
 // render an instance of the component in the DOM
