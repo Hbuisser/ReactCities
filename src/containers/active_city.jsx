@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 class ActiveCity extends Component {
   render() {
-    //const url = `https://kitt.lewagon.com/placeholder/cities/${this.props.activeCity.slug}`;
 
     if (!this.props.selectedCity) {
       return (
@@ -13,10 +12,13 @@ class ActiveCity extends Component {
       )
     }
 
+    const url = `https://kitt.lewagon.com/placeholder/cities/${this.props.selectedCity.slug}`;
+
     return (
       <div className="active-city">
         <h3>{this.props.selectedCity.name}</h3>
         <p>{this.props.selectedCity.address}</p>
+        <img src={url} alt="" width="100%"/>
       </div>
     )
   }
